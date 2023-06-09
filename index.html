@@ -3,62 +3,77 @@
 <head>
     <title>My Portfolio Website</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/darkmode.css">
     <style>
-        body {
-            background-color: #f8f9fa;
+        :root {
+            font-size: 16px; /* Set the root font size (adjust as needed) */
         }
-        .section {
-            background-color: #ffffff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
+        body {
+            padding-top: 4.375rem; /* Add top padding using rem units */
         }
     </style>
 </head>
-<body>
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col">
-                <h1 class="text-center">My Portfolio Website</h1>
-            </div>
+<body data-spy="scroll" data-target="#navbar">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
+    </nav>
+
+    <div id="home" class="container-fluid">
         <div class="row">
-            <div class="col-4">
+            <div class="col-lg-8 offset-lg-2">
                 <div class="section">
                     <h3>Home</h3>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="section">
-                    <h3>About</h3>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="section">
-                    <h3>Portfolio</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <div class="section">
-                    <h3>Services</h3>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="section">
-                    <h3>Blog</h3>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="section">
-                    <h3>Contact</h3>
+                    <!-- Content for the home section... -->
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="section">
+                    <h3>About</h3>
+                    <!-- Content for the about section... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="section">
+                    <h3>Portfolio</h3>
+                    <!-- Content for the portfolio section... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="section">
+                    <h3>Contact</h3>
+                    <!-- Content for the contact section... -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./static/js/main.js"></script>
 </body>
 </html>

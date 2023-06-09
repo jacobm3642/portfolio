@@ -1,0 +1,68 @@
+/*
+    TODO: all px measurements need to be changed to rem or vh/vw
+*/
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #252525;
+    --text-color: #ffffff;
+    --background-color: #343a40;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: var(--background-color) !important;
+}
+.navbar-brand, .navbar .nav-link {
+    color: var(--primary-color) !important;
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+.section {
+    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.section h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.section p {
+    margin-bottom: 0;
+}
+a {
+    color: var(--text-color);
+}
+a:hover {
+    color: var(--primary-color);
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-color: #000000;
+        --secondary-color: #ffffff;
+        --text-color: #000000;
+        --background-color: #f8f9fa;
+   }
+    .navbar {
+        background-color: var(--background-color) !important;
+   }
+    .navbar-brand, .navbar .nav-link {
+        color: var(--primary-color) !important;
+   }
+    .navbar-toggler-icon {
+        filter: invert(0);
+   }
+    .section {
+        background-color: var(--secondary-color) !important;
+        color: var(--text-color) !important;
+   }
+}

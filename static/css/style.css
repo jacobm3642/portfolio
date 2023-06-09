@@ -1,0 +1,16 @@
+/*
+    TODO: all px measurements need to be changed to rem or vh/vw
+*/
+
+body {
+    padding-top: 4.375rem; 
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 90vh;
+}
